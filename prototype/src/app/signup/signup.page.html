@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Inscription</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content style="margin-top:3px;">
+    <div class="play1">
+        <img src="assets/orbus.jpg" width="90" height="70">
+        <h6>Plateforme digitale d'accès aux services <br/> financiers en zone UEMOA</h6>
+    </div>
+    <div class="content">
+        <form #f="ngForm" (ngSubmit)="saveUser()">
+
+            <ion-item>
+                <!-- <ion-label class="inputest" position="floating"> Nom <sup>*</sup></ion-label> -->
+                <ion-input type="text" required="" [(ngModel)]="loadData.nom" name="nom" placeholder="Nom"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <!-- <ion-label class="inputest" position="floating"> Prenom <sup>*</sup></ion-label> -->
+                <ion-input type="text" required="" [(ngModel)]="loadData.prenom" name="prenom" placeholder="Prenom"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <!-- <ion-label class="inputest" position="floating"> Email <sup>*</sup></ion-label> -->
+                <ion-input type="email" required="" [(ngModel)]="loadData.email" name="email" placeholder="Email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <!-- <ion-label class="inputest" position="floating"> Login <sup>*</sup></ion-label> -->
+                <ion-input type="text" required="" [(ngModel)]="loadData.login" name="login" placeholder="Nom utilisateur"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <!-- <ion-label class="inputest" position="floating"> Mot de passe <sup>*</sup></ion-label> -->
+                <ion-input type="password" required="" [(ngModel)]="loadData.motdepasse" name="motdepasse" placeholder="Mot de passe"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <!-- <ion-label class="inputest" position="floating"> Téléphone <sup>*</sup></ion-label> -->
+                <ion-input type="text" required="" [(ngModel)]="loadData.telephone" name="telephone" placeholder="Téléphone"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <!-- <ion-label class="inputest" position="floating"> Adresse <sup>*</sup></ion-label> -->
+                <ion-input type="text" required="" [(ngModel)]="loadData.adresse" name="adresse" placeholder="adresse"></ion-input>
+            </ion-item>
+
+            <div class="bouton">
+                <ion-button color="primary" expand="full" type="submit"><span>VALIDER</span></ion-button>
+            </div>
+
+        </form>
+        <!-- </fieldset> -->
+
+    </div>
+</ion-content>
